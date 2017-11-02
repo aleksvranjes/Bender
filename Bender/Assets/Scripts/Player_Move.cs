@@ -4,61 +4,81 @@ using UnityEngine;
 
 public class Player_Move : MonoBehaviour {
 
-    public int playerSpeed = 5;
-    Vector3 rbVelocity;
-    Rigidbody rb;
+    public float playerSpeed;
+    private float theta;
+    private float x;
+    private float z;
+    private bool keyPressed;
+
+    Vector3 speed;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        theta = 0;
+        x = 0;
+        z = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        keyPressed = false;
 
         // Transform Movement Code
-        //if (Input.GetKey("w"))
-        //{
-        //    transform.position += new Vector3(0.0f, 0.0f, playerSpeed) * Time.deltaTime;
-        //}
-        //if (Input.GetKey("s"))
-        //{
-        //    transform.position += new Vector3(0.0f, 0.0f, -playerSpeed) * Time.deltaTime;
-        //}
-        //if (Input.GetKey("a"))
-        //{
-        //    transform.position += new Vector3(-playerSpeed, 0.0f, 0.0f) * Time.deltaTime;
-        //}
-        //if (Input.GetKey("d"))
-        //{
-        //    transform.position += new Vector3(playerSpeed, 0.0f, 0.0f) * Time.deltaTime;
-        //}
-
-        if (Input.GetKey("w"))
+        if (Input.GetKey("d"))
         {
-            rbVelocity = new Vector3(0.0f, 0.0f, playerSpeed);
-            rb.AddForce(rbVelocity * 0.1f, ForceMode.VelocityChange);
+            theta = 0;
+            keyPressed = true;
         }
-        if (Input.GetKey("s"))
-        {
-            rbVelocity = new Vector3(0.0f, 0.0f, -playerSpeed);
-            rb.AddForce(rbVelocity * 0.1f, ForceMode.VelocityChange);
+        if (Input.GetKey("w"))
+        { 
+            theta = 90;
+            keyPressed = true;
         }
         if (Input.GetKey("a"))
         {
-            rbVelocity = new Vector3(-playerSpeed, 0.0f, 0.0f);
-            rb.AddForce(rbVelocity * 0.1f, ForceMode.VelocityChange);
+            theta = 180;
+            keyPressed = true;
         }
-        if (Input.GetKey("d"))
+        if (Input.GetKey("s"))
         {
-            rbVelocity = new Vector3(playerSpeed, 0.0f, 0.0f);
-            rb.AddForce(rbVelocity * 0.1f, ForceMode.VelocityChange);
+            theta = 270;
+            keyPressed = true;
+        }
+        if (Input.GetKey("w") && Input.GetKey("d"))
+        {
+            theta = 45;
+            keyPressed = true;
+        }
+        if (Input.GetKey("w") && Input.GetKey("a"))
+        {
+            theta = 135;
+            keyPressed = true;
+        }
+        if (Input.GetKey("s") && Input.GetKey("a"))
+        {
+            theta = 225;
+            keyPressed = true;
+        }
+        if (Input.GetKey("s") && Input.GetKey("d"))
+        {
+            theta = 315;
+            keyPressed = true;
         }
 
-        if (rbVelocity.magnitude > 1.0f)
+        if (keyPressed)
         {
-            rb.velocity = (rbVelocity.normalized) * 1.0f;
+            x = playerSpeed;
+            z = 0;
         }
+        else
+        {
+            x = 0;
+            z = 0;
+        }
+
+        theta = theta * Mathf.PI / 180;
+        speed = new Vector3((x * Mathf.Cos(theta) - (z * Mathf.Sin(theta))), 0.0f, (x * Mathf.Sin(theta)) + (z * Mathf.Cos(theta)));
+        transform.position += speed * Time.deltaTime;
     }
 }
