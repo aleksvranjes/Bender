@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bullet_Earth : Bullet {
 
-		public override void BulletContact()
-		{
-			// Do earth damage
-		}
+		// public override void BulletContact()
+		// {
+		// 	// Do earth damage
+		// }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bullet_Fire : Bullet {
 
-		public override void BulletContact()
-		{
-			// Do fire damage
-		}
+		// public override void BulletContact()
+		// {
+		// 	// Do fire damage
+		// }
 }

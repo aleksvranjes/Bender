@@ -42,8 +42,8 @@ public class Player_Manager : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (Input.GetKey("space"))
-            TakeDamage();
+        // if (Input.GetKey("space"))
+        //     TakeDamage();
 
         if (transform.position.y < 0.9f && outOfBounds == false)
         {
@@ -53,7 +53,7 @@ public class Player_Manager : MonoBehaviour {
     }
 
     //
-    void TakeDamage()
+    public void TakeDamage()
     {
         if (invincible)
         {
@@ -75,7 +75,6 @@ public class Player_Manager : MonoBehaviour {
         float totalTime = 0;
         float currentTime;
         bool currentlyActive = true;
-
         while (totalTime < hitDuration)
         {
             currentTime = Time.time;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
 	public float bulletSpeed = 10.0f;
+	public int bulletType;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,16 @@ public class Bullet : MonoBehaviour {
 
 	public virtual void BulletContact()
 	{
-		//This function is purely virtual
+		Destroy(this.gameObject);
+	}
+
+	public void OnTriggerEnter(Collider other) 
+	{
+		if (other.transform.tag == "Enemy")
+		{
+			other.GetComponentInParent<Enemy>().BulletHit(bulletType);
+			BulletContact();
+		}
 	}
 
 

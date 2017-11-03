@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Bullet_Metal : Bullet {
 
-		public override void BulletContact()
-		{
-			// Do metal damage
-		}
+		// public override void BulletContact()
+		// {
+		// 	// Do metal damage
+		// }
 }
