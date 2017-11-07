@@ -23,12 +23,16 @@ public class Player_Manager : MonoBehaviour {
     public float fallDuration = 2f;
     public bool outOfBounds = false;
     public float maxFallDistance = -20;
+    public Game_Manager gameManager;
 
     public MeshRenderer mR;
     private Player_Mouse_Rotate pMR;
     private Player_Shoot pS;
     private Player_Move pM;
 
+    private Vector3 startPos;
+    private Vector3 startScale;
+    private Quaternion startRot;
 
     // Use this for initialization
     void Start ()
@@ -37,6 +41,10 @@ public class Player_Manager : MonoBehaviour {
         pMR = GetComponent<Player_Mouse_Rotate>();
         pS = GetComponent<Player_Shoot>();
         pM = GetComponent<Player_Move>();
+        DisablePlayer();
+        startPos = transform.position;
+        startScale = transform.localScale;
+        startRot = transform.rotation;
     }
     
     // Update is called once per frame
@@ -62,10 +70,14 @@ public class Player_Manager : MonoBehaviour {
 
         // If there are no lives left, destroy the player
         if (lives == 0)
+        {
             DestroyPlayer();
+            return;
+        }
 
         lives--;
-        Debug.Log("Player hit. Lives = " + lives);
+        gameManager.LostLife(lives);
+        //Debug.Log("Player hit. Lives = " + lives);
         invincible = true;
         StartCoroutine("PlayerHit");
     }
@@ -86,6 +98,20 @@ public class Player_Manager : MonoBehaviour {
 
         mR.enabled = true;
         invincible = false;
+    }
+
+    public void DisablePlayer()
+    {
+        pMR.rotateWithMouse = false;
+        pS.StopShooting();
+        pM.allowMovement = false;
+    }
+
+    public void EnablePlayer()
+    {
+        pMR.rotateWithMouse = true;
+        pS.allowShooting = true;
+        pM.allowMovement = true;
     }
 
     public void OutOfBounds()
@@ -134,7 +160,17 @@ public class Player_Manager : MonoBehaviour {
 
     public void DestroyPlayer()
     {
-        Destroy(this.gameObject);
-        Debug.Log("GAME OVER");
+        gameObject.SetActive(false); 
+        //Debug.Log("GAME OVER");
+        gameManager.GameOver();
+    }
+
+    public void ResetPlayer()
+    {
+        gameObject.SetActive(true);
+        transform.position = startPos;
+        transform.localScale = startScale;
+        transform.rotation = startRot;
+        lives = 3;
     }
 }

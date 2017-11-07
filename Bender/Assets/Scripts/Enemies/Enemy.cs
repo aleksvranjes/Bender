@@ -24,6 +24,8 @@ public class Enemy : MonoBehaviour {
     public float hitDuration = 0.1f;
     public Material normalMat, hitMat;
 
+    public Score_Manager scoreManager;
+
     private SphereCollider sC;
 
     private Rigidbody rb;
@@ -41,7 +43,7 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if (chasePlayer)
+		if (chasePlayer && player != null)
         {
             ChasePlayer();
         }
@@ -97,6 +99,7 @@ public class Enemy : MonoBehaviour {
     	hp -= Random.Range(lowerRange, 	upperRange);
     	if (hp <= 0)
     	{
+            scoreManager.AddScore(150);
     		Destroy(this.gameObject);
     	}
     }

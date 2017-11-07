@@ -15,8 +15,14 @@ public class Spawner : MonoBehaviour {
 	public GameObject[] smallEnemies;
 	public Transform[] smallSpawnLocations;
 
+    public Score_Manager scoreManager;
 
-	public void Update()
+    public void Start()
+    {
+        spawnSmalls = false;
+    }
+
+    public void Update()
 	{
 		if (spawnSmalls && !smallSpawnerStarted)
 		{
@@ -24,6 +30,18 @@ public class Spawner : MonoBehaviour {
 			StartCoroutine ("SmallSpawner");
 		}
 	}
+
+    public void StartAllSpawners()
+    {
+        spawnSmalls = true;
+    }
+
+    public void StopAllSpawners()
+    {
+        spawnSmalls = false;
+        StopCoroutine("SmallSpawner");
+        smallSpawnerStarted = false;
+    }
 
 	private IEnumerator SmallSpawner()
 	{
@@ -36,7 +54,8 @@ public class Spawner : MonoBehaviour {
 				int randomEnemy = Random.Range (0, 5);
 				GameObject newEnemy = Instantiate (smallEnemies[randomEnemy], smallSpawnLocations[i].position, Quaternion.identity, enemySmallParent);
 				newEnemy.GetComponent<Enemy>().player = player;
-			}
+                newEnemy.GetComponent<Enemy>().scoreManager = scoreManager;
+            }
 			yield return new WaitForSeconds (delay);
 		}
 	}
