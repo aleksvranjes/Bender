@@ -9,12 +9,12 @@ public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		//transform.rotation = Quaternion.Euler(new Vector3(90, -90, 0));
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += transform.right * bulletSpeed * Time.deltaTime * 10.0f;
+		transform.position += -transform.up * bulletSpeed * Time.deltaTime * 10.0f;
 	}
 
 	public virtual void BulletContact()

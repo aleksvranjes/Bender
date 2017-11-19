@@ -1,0 +1,370 @@
+ffmpeg version 3.3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 7.1.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --enable-cuda --enable-cuvid --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-nvenc --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-zlib
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.dK2296'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/heroEarth.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.dK2296.
+[file @ 000000000047ad40] Setting default whitelist 'file,crypto'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame%04d.png.
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0000.png' for reading
+[file @ 000000000028d300] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bfc0] Statistics: 3683 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0001.png' for reading
+[file @ 000000000028fea0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028d440] Statistics: 3508 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0002.png' for reading
+[file @ 000000000028fea0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028e380] Statistics: 3706 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0003.png' for reading
+[file @ 000000000028fea0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028e380] Statistics: 3659 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0004.png' for reading
+[file @ 000000000028fea0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028e380] Statistics: 3686 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0005.png' for reading
+[file @ 000000000028e380] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028e460] Statistics: 3383 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0006.png' for reading
+[file @ 000000000028e380] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000028e460] Statistics: 3388 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0007.png' for reading
+[file @ 000000000048bc00] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd00] Statistics: 3381 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0008.png' for reading
+[file @ 000000000028f1a0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bc00] Statistics: 3468 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0009.png' for reading
+[file @ 00000000004bed60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004bee40] Statistics: 3266 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0010.png' for reading
+[file @ 00000000004bede0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004bfc80] Statistics: 3234 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0011.png' for reading
+[file @ 00000000004bede0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bc00] Statistics: 3299 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0012.png' for reading
+[file @ 00000000004bede0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bc00] Statistics: 3350 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0013.png' for reading
+[file @ 00000000004bee80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bc00] Statistics: 3274 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0014.png' for reading
+[file @ 000000000048bc00] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd00] Statistics: 3254 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0015.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3312 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0016.png' for reading
+[file @ 00000000004c4cc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bca0] Statistics: 3329 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0017.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3145 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0018.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3200 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0019.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3261 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0020.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3214 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0021.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3169 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0022.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3244 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0023.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3286 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0024.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3286 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0025.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3009 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0026.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3230 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0027.png' for reading
+[file @ 000000000048bca0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bd80] Statistics: 3237 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0028.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000048bca0] Statistics: 3309 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0029.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3342 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0030.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3459 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0031.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3460 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0032.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3577 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0033.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3421 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0034.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3407 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0035.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3338 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0036.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3524 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0037.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3298 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0038.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3326 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0039.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3273 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0040.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3417 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0041.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3412 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0042.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3303 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0043.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3445 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0044.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3462 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0045.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3103 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0046.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3052 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0047.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3125 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0048.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3139 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0049.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 2992 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0050.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3080 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0051.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3100 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0052.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3251 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0053.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3222 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0054.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3283 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0055.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3408 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0056.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3350 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0057.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3340 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0058.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3502 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0059.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3273 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0060.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3290 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0061.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3315 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0062.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3431 bytes read, 0 seeks
+[image2 @ 0000000000289500] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame0063.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000004d1ca0] Statistics: 3596 bytes read, 0 seeks
+Input #0, image2, from 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame%04d.png':
+  Duration: 00:00:02.56, start: 0.000000, bitrate: N/A
+    Stream #0:0, 64, 1/25: Video: png, 1 reference frame, rgba(pc), 200x200 [SAR 11811:11811 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png.
+[NULL @ 00000000004f1580] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png' for reading
+[file @ 00000000004d0e60] Setting default whitelist 'file,crypto'
+[png_pipe @ 00000000004f1580] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 00000000004f1580] Before avformat_find_stream_info() pos: 0 bytes read:723 seeks:0 nb_streams:1
+[png_pipe @ 00000000004f1580] After avformat_find_stream_info() pos: 723 bytes read:723 seeks:0 frames:1
+Input #1, png_pipe, from 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+detected 8 logical cores
+Parsing a group of options: output url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/heroEarth.gif.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/heroEarth.gif.
+[file @ 00000000004876a0] Setting default whitelist 'file,crypto'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+    Last message repeated 10 times
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'video_size' to value '200x200'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 000000000028d2a0] w:200 h:200 pixfmt:rgba tb:1/24 fr:24/1 sar:11811/11811 sws_param:flags=2
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 1:0 @ 0000000003740660] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 0000000003740660] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1 sws_param:flags=2
+[format @ 00000000037407e0] compat: called with args=[rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8]
+[format @ 00000000037407e0] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 00000000037b0820] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000000000028d440] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 00000000037b08e0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 000000000028d440] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 00000000004b5f40] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 00000000038dafe0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 00000000037b0820] w:200 h:200 fmt:rgba sar:11811/11811 -> w:200 h:200 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 00000000038eec40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 00000000037b08e0] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 000000000028d440] [framesync @ 0000000005d400a8] Selected 1/600 time base
+[Parsed_paletteuse_0 @ 000000000028d440] [framesync @ 0000000005d400a8] Sync level 2
+Output #0, gif, to 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/heroEarth.gif':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 200x200 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 100 tbn, 24 tbc (default)
+    Metadata:
+      encoder         : Lavc57.89.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 0000000000485c60] 36x56 image at pos (82;115) [area:200x200]
+[gif @ 0000000000485c60] 35x62 image at pos (82;112) [area:200x200]
+[gif @ 0000000000485c60] 36x62 image at pos (82;112) [area:200x200]
+[gif @ 0000000000485c60] 36x62 image at pos (82;113) [area:200x200]
+[gif @ 0000000000485c60] 35x62 image at pos (82;113) [area:200x200]
+[gif @ 0000000000485c60] 28x49 image at pos (88;118) [area:200x200]
+[gif @ 0000000000485c60] 29x51 image at pos (88;119) [area:200x200]
+[gif @ 0000000000485c60] 29x53 image at pos (88;122) [area:200x200]
+    Last message repeated 1 times
+[gif @ 0000000000485c60] 28x43 image at pos (89;126) [area:200x200]
+[gif @ 0000000000485c60] 29x44 image at pos (88;128) [area:200x200]
+[gif @ 0000000000485c60] 31x61 image at pos (87;113) [area:200x200]
+    Last message repeated 1 times
+[gif @ 0000000000485c60] 31x51 image at pos (87;114) [area:200x200]
+[gif @ 0000000000485c60] 30x57 image at pos (88;111) [area:200x200]
+[gif @ 0000000000485c60] 30x61 image at pos (88;111) [area:200x200]
+[gif @ 0000000000485c60] 30x53 image at pos (88;119) [area:200x200]
+[gif @ 0000000000485c60] 22x41 image at pos (88;116) [area:200x200]
+[gif @ 0000000000485c60] 24x51 image at pos (86;109) [area:200x200]
+[gif @ 0000000000485c60] 21x55 image at pos (85;109) [area:200x200]
+[gif @ 0000000000485c60] 21x55 image at pos (85;112) [area:200x200]
+[gif @ 0000000000485c60] 22x56 image at pos (85;115) [area:200x200]
+[gif @ 0000000000485c60] 26x61 image at pos (85;115) [area:200x200]
+[gif @ 0000000000485c60] 32x62 image at pos (80;117) [area:200x200]
+[gif @ 0000000000485c60] 32x60 image at pos (80;119) [area:200x200]
+[gif @ 0000000000485c60] 27x38 image at pos (85;111) [area:200x200]
+[gif @ 0000000000485c60] 28x43 image at pos (83;111) [area:200x200]
+[gif @ 0000000000485c60] 29x43 image at pos (83;114) [area:200x200]
+[gif @ 0000000000485c60] 29x53 image at pos (83;109) [area:200x200]
+[gif @ 0000000000485c60] 30x57 image at pos (83;109) [area:200x200]
+[gif @ 0000000000485c60] 30x62 image at pos (83;109) [area:200x200]
+[gif @ 0000000000485c60] 33x62 image at pos (82;112) [area:200x200]
+[gif @ 0000000000485c60] 33x60 image at pos (82;114) [area:200x200]
+[gif @ 0000000000485c60] 34x54 image at pos (81;115) [area:200x200]
+[gif @ 0000000000485c60] 34x57 image at pos (81;115) [area:200x200]
+[gif @ 0000000000485c60] 33x60 image at pos (82;119) [area:200x200]
+[gif @ 0000000000485c60] 33x58 image at pos (82;121) [area:200x200]
+[gif @ 0000000000485c60] 35x54 image at pos (80;123) [area:200x200]
+[gif @ 0000000000485c60] 35x66 image at pos (80;111) [area:200x200]
+[gif @ 0000000000485c60] 30x46 image at pos (86;111) [area:200x200]
+[gif @ 0000000000485c60] 31x48 image at pos (86;113) [area:200x200]
+[gif @ 0000000000485c60] 30x27 image at pos (87;138) [area:200x200]
+[gif @ 0000000000485c60] 31x25 image at pos (87;144) [area:200x200]
+[gif @ 0000000000485c60] 33x63 image at pos (86;113) [area:200x200]
+    Last message repeated 1 times
+[gif @ 0000000000485c60] 22x51 image at pos (97;114) [area:200x200]
+[gif @ 0000000000485c60] 21x53 image at pos (97;117) [area:200x200]
+[gif @ 0000000000485c60] 34x70 image at pos (85;107) [area:200x200]
+[gif @ 0000000000485c60] 35x70 image at pos (84;107) [area:200x200]
+[gif @ 0000000000485c60] 31x35 image at pos (84;110) [area:200x200]
+[gif @ 0000000000485c60] 32x34 image at pos (84;111) [area:200x200]
+[gif @ 0000000000485c60] 33x26 image at pos (84;114) [area:200x200]
+[gif @ 0000000000485c60] 33x30 image at pos (84;116) [area:200x200]
+[gif @ 0000000000485c60] 33x41 image at pos (84;108) [area:200x200]
+[gif @ 0000000000485c60] 32x47 image at pos (84;108) [area:200x200]
+[gif @ 0000000000485c60] 32x50 image at pos (84;109) [area:200x200]
+[gif @ 0000000000485c60] 32x56 image at pos (84;111) [area:200x200]
+[gif @ 0000000000485c60] 33x66 image at pos (84;109) [area:200x200]
+    Last message repeated 1 times
+[gif @ 0000000000485c60] 34x34 image at pos (83;112) [area:200x200]
+[gif @ 0000000000485c60] 34x39 image at pos (83;112) [area:200x200]
+[gif @ 0000000000485c60] 34x42 image at pos (83;115) [area:200x200]
+[gif @ 0000000000485c60] 34x48 image at pos (83;115) [area:200x200]
+[Parsed_paletteuse_0 @ 000000000028d440] [framesync @ 0000000005d400a8] Sync level 0
+[out_0_0 @ 00000000004a2140] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   64 fps=0.0 q=-0.0 Lsize=      12kB time=00:00:02.64 bitrate=  36.6kbits/s speed=28.4x    
+[AVIOContext @ 00000000002893e0] Statistics: 0 seeks, 1 writeouts
+video:11kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 12.181093%
+Input file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/frame%04d.png):
+  Input stream #0:0 (video): 64 packets read (213086 bytes); 64 frames decoded; 
+  Total: 64 packets (213086 bytes) demuxed
+Input file #1 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/palette.png):
+  Input stream #1:0 (video): 1 packets read (723 bytes); 1 frames decoded; 
+  Total: 1 packets (723 bytes) demuxed
+Output file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Earth/Animated/heroEarth.gif):
+  Output stream #0:0 (video): 64 frames encoded; 64 packets muxed (10779 bytes); 
+  Total: 64 packets (10779 bytes) muxed
+65 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0000000000487780] Statistics: 0 seeks, 65 writeouts
+[AVIOContext @ 00000000004d1ca0] Statistics: 723 bytes read, 0 seeks

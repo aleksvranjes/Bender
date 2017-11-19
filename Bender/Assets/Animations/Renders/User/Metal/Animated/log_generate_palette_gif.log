@@ -1,0 +1,194 @@
+ffmpeg version 3.3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 7.1.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --enable-cuda --enable-cuvid --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-nvenc --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-zlib
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.Hu2296'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame%04d.png'.
+Reading option '-vf' ... matched as option 'vf' (set video filters) with argument 'palettegen'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.Hu2296.
+[file @ 000000000057a860] Setting default whitelist 'file,crypto'
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame%04d.png.
+[image2 @ 0000000000582f20] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame0000.png' for reading
+[file @ 000000000038acc0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000038adc0] Statistics: 12310 bytes read, 0 seeks
+[image2 @ 0000000000582f20] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame0001.png' for reading
+[file @ 000000000058c0c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000058c1c0] Statistics: 13769 bytes read, 0 seeks
+[image2 @ 0000000000582f20] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame0002.png' for reading
+[file @ 000000000058c160] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000038dfa0] Statistics: 13624 bytes read, 0 seeks
+[image2 @ 0000000000582f20] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame0003.png' for reading
+[file @ 000000000058a7e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000058b8c0] Statistics: 13625 bytes read, 0 seeks
+[image2 @ 0000000000582f20] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame0004.png' for reading
+[file @ 000000000058b8c0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000058b9c0] Statistics: 13634 bytes read, 0 seeks
+Input #0, image2, from 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame%04d.png':
+  Duration: 00:00:00.20, start: 0.000000, bitrate: N/A
+    Stream #0:0, 5, 1/25: Video: png, 1 reference frame, rgba(pc), 200x200 [SAR 11811:11811 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: output url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png.
+Applying option vf (set video filters) with argument palettegen.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png.
+Successfully opened the file.
+detected 8 logical cores
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> png (native))
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+    Last message repeated 5 times
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'video_size' to value '200x200'
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 00000000005edee0] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 00000000005edee0] w:200 h:200 pixfmt:rgba tb:1/24 fr:24/1 sar:11811/11811 sws_param:flags=2
+[format @ 00000000039727a0] compat: called with args=[rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob]
+[format @ 00000000039727a0] Setting 'pix_fmts' to value 'rgb24|rgba|rgb48be|rgba64be|pal8|gray|ya8|gray16be|ya16be|monob'
+[auto_scaler_0 @ 00000000005aa5e0] Setting 'flags' to value 'bicubic'
+[auto_scaler_0 @ 00000000005aa5e0] w:iw h:ih flags:'bicubic' interl:0
+[Parsed_palettegen_0 @ 00000000005ede20] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_palettegen_0'
+[auto_scaler_1 @ 00000000005b0e80] Setting 'flags' to value 'bicubic'
+[auto_scaler_1 @ 00000000005b0e80] w:iw h:ih flags:'bicubic' interl:0
+[format @ 00000000039727a0] auto-inserting filter 'auto_scaler_1' between the filter 'Parsed_palettegen_0' and the filter 'format'
+[AVFilterGraph @ 00000000005c5d80] query_formats: 4 queried, 1 merged, 2 already done, 0 delayed
+[auto_scaler_1 @ 00000000005b0e80] picking rgba out of 9 ref:bgra alpha:1
+[swscaler @ 0000000000599d40] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 00000000005aa5e0] w:200 h:200 fmt:rgba sar:11811/11811 -> w:200 h:200 fmt:bgra sar:1/1 flags:0x4
+[swscaler @ 0000000003973f80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 00000000005b0e80] w:16 h:16 fmt:bgra sar:1/1 -> w:16 h:16 fmt:rgba sar:1/1 flags:0x4
+Output #0, image2, to 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0, 0, 1/24: Video: png, 1 reference frame, rgba, 16x16 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 24 tbn, 24 tbc
+    Metadata:
+      encoder         : Lavc57.89.100 png
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+    Last message repeated 4 times
+[Parsed_palettegen_0 @ 00000000005ede20] 255(+1) colors generated out of 1385 colors; ratio=0.184116
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF000000
+    Last message repeated 4 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF010101
+    Last message repeated 2 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF020202
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF030303
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF040404
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF050505
+    Last message repeated 2 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF060606
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF070707
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF080808
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF090909
+    Last message repeated 2 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0A0A0A
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0B0B0B
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0C0C0C
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0D0D0D
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0E0E0E
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF0F0F0F
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF101010
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF111111
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF121212
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF131313
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF141414
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF151515
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF161616
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF171717
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF181818
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF191919
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF1A1A1A
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF1B1B1B
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF1D1D1D
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF1E1E1E
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF1F1F1F
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF202020
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF212121
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF222222
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF232323
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF242424
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF252525
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF2F2F2F
+    Last message repeated 1 times
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF303030
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF363636
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF383838
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF404040
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF434343
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF454545
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF505050
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF575757
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF5B5B5B
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF5C5C5C
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF5E5E5E
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF616161
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF646464
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF6B6B6B
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF6F6F6F
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF747474
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF757575
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF7A7A7A
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF7D7D7D
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF838383
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF939393
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF959595
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FF9C9C9C
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FFA1A1A1
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FFD5D5D5
+[Parsed_palettegen_0 @ 00000000005ede20] Dupped color: FFFFFFFF
+    Last message repeated 3 times
+[swscaler @ 0000000003973f80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 00000000005b0e80] w:16 h:16 fmt:bgra sar:0/1 -> w:16 h:16 fmt:rgba sar:0/1 flags:0x4
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+Clipping frame in rate conversion by 0.000008
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+[out_0_0 @ 00000000039726c0] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+[image2 @ 000000000038a0c0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png' for writing
+[file @ 0000000000594e60] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000005ffe60] Statistics: 0 seeks, 1 writeouts
+frame=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=2.45x    
+[AVIOContext @ 0000000000582e00] Statistics: 0 seeks, 1 writeouts
+video:1kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+Input file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/frame%04d.png):
+  Input stream #0:0 (video): 5 packets read (66962 bytes); 5 frames decoded; 
+  Total: 5 packets (66962 bytes) demuxed
+Output file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/animations/Renders/User/Metal/Animated/palette.png):
+  Output stream #0:0 (video): 1 frames encoded; 1 packets muxed (732 bytes); 
+  Total: 1 packets (732 bytes) muxed
+5 frames successfully decoded, 0 decoding errors

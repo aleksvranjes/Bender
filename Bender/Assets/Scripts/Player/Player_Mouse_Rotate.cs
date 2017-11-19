@@ -26,7 +26,7 @@ public class Player_Mouse_Rotate : MonoBehaviour {
 
 			angle = Mathf.Atan2(mouseVector.y, mouseVector.x) * Mathf.Rad2Deg;
 
-			transform.rotation = Quaternion.Euler(new Vector3(0.0f, -angle, 0.0f));
+			//transform.rotation = Quaternion.Euler(new Vector3(90, -angle, 0.0f));
 		}
 	}
 }

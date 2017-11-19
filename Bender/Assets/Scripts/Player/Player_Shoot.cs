@@ -53,12 +53,13 @@ public class Player_Shoot : MonoBehaviour {
 	{
 		while (true)
 		{
-			Quaternion angle = Quaternion.Euler(new Vector3(0.0f, -pMR.angle, 0.0f));
+			Debug.Log(pMR.angle);
+			Quaternion angle = Quaternion.Euler(new Vector3(90, -pMR.angle - 90, 0.0f));
 			Vector3 pos = transform.position;
 
 			int bulletType = bTM.GetCurrentBulletType();
 			GameObject bullet = Instantiate(bulletPrefabs[bulletType], pos, angle);
-			bullet.GetComponent<Bullet>().bulletType = bulletType;
+			//bullet.GetComponent<Bullet>().bulletType = bulletType;
 			Destroy(bullet, bulletLifespan);
 
 			yield return new WaitForSeconds(shootRate);
@@ -69,7 +70,6 @@ public class Player_Shoot : MonoBehaviour {
 	{
 		startedShooting = false;
 		allowShooting = false;
-		Debug.Log("Stopped shooting");
 		StopCoroutine("Shoot");
 	}
 }

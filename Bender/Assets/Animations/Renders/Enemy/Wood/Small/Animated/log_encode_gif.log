@@ -1,0 +1,186 @@
+ffmpeg version 3.3.3 Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 7.1.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --enable-cuda --enable-cuvid --enable-d3d11va --enable-dxva2 --enable-libmfx --enable-nvenc --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-libzimg --enable-lzma --enable-zlib
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Splitting the commandline.
+Reading option '-v' ... matched as option 'v' (set logging level) with argument 'debug'.
+Reading option '-nostdin' ... matched as option 'stdin' (enable or disable interaction on standard input) with argument 0.
+Reading option '-progress' ... matched as option 'progress' (write program-readable progress information) with argument 'C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.rz5280'.
+Reading option '-r' ... matched as option 'r' (set frame rate (Hz value, fraction or abbreviation)) with argument '24'.
+Reading option '-start_number' ... matched as AVOption 'start_number' with argument '0'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame%04d.png'.
+Reading option '-i' ... matched as input url with argument 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png'.
+Reading option '-lavfi' ... matched as option 'lavfi' (create a complex filtergraph) with argument '[0:v][1:v] paletteuse'.
+Reading option '-y' ... matched as option 'y' (overwrite output files) with argument '1'.
+Reading option 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/Tree Enemy Small.gif' ... matched as output url.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option v (set logging level) with argument debug.
+Applying option nostdin (enable or disable interaction on standard input) with argument 0.
+Applying option progress (write program-readable progress information) with argument C:/Users/Dr.Seuss/AppData/Local/Temp/KritaFFmpegProgress.rz5280.
+[file @ 000000000033adc0] Setting default whitelist 'file,crypto'
+Applying option lavfi (create a complex filtergraph) with argument [0:v][1:v] paletteuse.
+Applying option y (overwrite output files) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame%04d.png.
+Applying option r (set frame rate (Hz value, fraction or abbreviation)) with argument 24.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame%04d.png.
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0000.png' for reading
+[file @ 00000000006bb4e0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000034bfa0] Statistics: 18537 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0001.png' for reading
+[file @ 00000000021bdac0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000021bdc20] Statistics: 18537 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0002.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000021bdac0] Statistics: 17319 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0003.png' for reading
+[file @ 00000000021bdac0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 00000000021bdec0] Statistics: 16739 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0004.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000035c0e0] Statistics: 16024 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0005.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000360140] Statistics: 16442 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0006.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000364340] Statistics: 16747 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0007.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000368680] Statistics: 17026 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0008.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000036dac0] Statistics: 17325 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0009.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000371fe0] Statistics: 17696 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0010.png' for reading
+[file @ 00000000021bde80] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000371fe0] Statistics: 17696 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0011.png' for reading
+[file @ 0000000000371fe0] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000037ac40] Statistics: 17317 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0012.png' for reading
+[file @ 000000000037ac40] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000037f160] Statistics: 17033 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0013.png' for reading
+[file @ 000000000037f160] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000383560] Statistics: 16699 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0014.png' for reading
+[file @ 000000000037f160] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000383560] Statistics: 16433 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0015.png' for reading
+[file @ 0000000000383560] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000038c8a0] Statistics: 16024 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0016.png' for reading
+[file @ 0000000000383560] Setting default whitelist 'file,crypto'
+[AVIOContext @ 000000000038c8a0] Statistics: 16756 bytes read, 0 seeks
+[image2 @ 00000000006b97a0] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame0017.png' for reading
+[file @ 0000000000383560] Setting default whitelist 'file,crypto'
+[AVIOContext @ 0000000000398900] Statistics: 17294 bytes read, 0 seeks
+Input #0, image2, from 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame%04d.png':
+  Duration: 00:00:00.72, start: 0.000000, bitrate: N/A
+    Stream #0:0, 18, 1/25: Video: png, 1 reference frame, rgba(pc), 400x400 [SAR 11811:11811 DAR 1:1], 0/1, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+Parsing a group of options: input url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png.
+Successfully parsed a group of options.
+Opening an input file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png.
+[NULL @ 000000000034a140] Opening 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png' for reading
+[file @ 000000000038c8a0] Setting default whitelist 'file,crypto'
+[png_pipe @ 000000000034a140] Format png_pipe probed with size=2048 and score=99
+[png_pipe @ 000000000034a140] Before avformat_find_stream_info() pos: 0 bytes read:857 seeks:0 nb_streams:1
+[png_pipe @ 000000000034a140] After avformat_find_stream_info() pos: 857 bytes read:857 seeks:0 frames:1
+Input #1, png_pipe, from 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png':
+  Duration: N/A, bitrate: N/A
+    Stream #1:0, 1, 1/25: Video: png, 1 reference frame, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 0/1, 25 tbr, 25 tbn, 25 tbc
+Successfully opened the file.
+detected 8 logical cores
+Parsing a group of options: output url C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/Tree Enemy Small.gif.
+Successfully parsed a group of options.
+Opening an output file: C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/Tree Enemy Small.gif.
+[file @ 0000000000353960] Setting default whitelist 'file,crypto'
+Successfully opened the file.
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+cur_dts is invalid (this is harmless if it occurs once at the start per stream)
+    Last message repeated 10 times
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'video_size' to value '400x400'
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'time_base' to value '1/24'
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'pixel_aspect' to value '11811/11811'
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 0:0 @ 0000000000360100] Setting 'frame_rate' to value '24/1'
+[graph 0 input from stream 0:0 @ 0000000000360100] w:400 h:400 pixfmt:rgba tb:1/24 fr:24/1 sar:11811/11811 sws_param:flags=2
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'video_size' to value '16x16'
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'pix_fmt' to value '28'
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'time_base' to value '1/25'
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'pixel_aspect' to value '1/1'
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'sws_param' to value 'flags=2'
+[graph 0 input from stream 1:0 @ 00000000006bff00] Setting 'frame_rate' to value '25/1'
+[graph 0 input from stream 1:0 @ 00000000006bff00] w:16 h:16 pixfmt:rgba tb:1/25 fr:25/1 sar:1/1 sws_param:flags=2
+[format @ 0000000002135020] compat: called with args=[rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8]
+[format @ 0000000002135020] Setting 'pix_fmts' to value 'rgb8|bgr8|rgb4_byte|bgr4_byte|gray|pal8'
+[auto_scaler_0 @ 0000000002180440] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000000000364300] auto-inserting filter 'auto_scaler_0' between the filter 'graph 0 input from stream 0:0' and the filter 'Parsed_paletteuse_0'
+[auto_scaler_1 @ 00000000021805e0] w:iw h:ih flags:'bilinear' interl:0
+[Parsed_paletteuse_0 @ 0000000000364300] auto-inserting filter 'auto_scaler_1' between the filter 'graph 0 input from stream 1:0' and the filter 'Parsed_paletteuse_0'
+[AVFilterGraph @ 00000000003443a0] query_formats: 5 queried, 2 merged, 2 already done, 0 delayed
+[swscaler @ 0000000002191ca0] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_0 @ 0000000002180440] w:400 h:400 fmt:rgba sar:11811/11811 -> w:400 h:400 fmt:bgra sar:1/1 flags:0x2
+[swscaler @ 00000000021a5b80] Forcing full internal H chroma due to input having non subsampled chroma
+[auto_scaler_1 @ 00000000021805e0] w:16 h:16 fmt:rgba sar:1/1 -> w:16 h:16 fmt:bgra sar:1/1 flags:0x2
+[Parsed_paletteuse_0 @ 0000000000364300] [framesync @ 0000000004dbcc28] Selected 1/600 time base
+[Parsed_paletteuse_0 @ 0000000000364300] [framesync @ 0000000004dbcc28] Sync level 2
+Output #0, gif, to 'C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/Tree Enemy Small.gif':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0, 0, 1/100: Video: gif, 1 reference frame, pal8, 400x400 [SAR 1:1 DAR 1:1], 0/1, q=2-31, 200 kb/s, 24 fps, 100 tbn, 24 tbc (default)
+    Metadata:
+      encoder         : Lavc57.89.100 gif
+Clipping frame in rate conversion by 0.000008
+[gif @ 0000000000350d20] 1x1 image at pos (399;399) [area:400x400]
+[gif @ 0000000000350d20] 185x96 image at pos (110;280) [area:400x400]
+[gif @ 0000000000350d20] 186x83 image at pos (108;285) [area:400x400]
+[gif @ 0000000000350d20] 184x75 image at pos (108;285) [area:400x400]
+[gif @ 0000000000350d20] 177x72 image at pos (112;284) [area:400x400]
+[gif @ 0000000000350d20] 176x77 image at pos (112;282) [area:400x400]
+[gif @ 0000000000350d20] 187x82 image at pos (110;282) [area:400x400]
+[gif @ 0000000000350d20] 189x88 image at pos (110;284) [area:400x400]
+[gif @ 0000000000350d20] 187x97 image at pos (112;283) [area:400x400]
+[gif @ 0000000000350d20] 1x1 image at pos (399;399) [area:400x400]
+[gif @ 0000000000350d20] 187x97 image at pos (112;283) [area:400x400]
+[gif @ 0000000000350d20] 189x88 image at pos (110;284) [area:400x400]
+[gif @ 0000000000350d20] 187x82 image at pos (110;282) [area:400x400]
+[gif @ 0000000000350d20] 176x77 image at pos (112;282) [area:400x400]
+[gif @ 0000000000350d20] 177x72 image at pos (112;284) [area:400x400]
+[gif @ 0000000000350d20] 184x75 image at pos (108;285) [area:400x400]
+[gif @ 0000000000350d20] 186x83 image at pos (108;285) [area:400x400]
+[Parsed_paletteuse_0 @ 0000000000364300] [framesync @ 0000000004dbcc28] Sync level 0
+[out_0_0 @ 000000000213da80] EOF on sink link out_0_0:default.
+No more output streams to write to, finishing.
+frame=   18 fps=0.0 q=-0.0 Lsize=      40kB time=00:00:00.72 bitrate= 452.8kbits/s speed=5.03x    
+[AVIOContext @ 00000000006b95a0] Statistics: 0 seeks, 1 writeouts
+video:39kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.374074%
+Input file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/frame%04d.png):
+  Input stream #0:0 (video): 18 packets read (307644 bytes); 18 frames decoded; 
+  Total: 18 packets (307644 bytes) demuxed
+Input file #1 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/palette.png):
+  Input stream #1:0 (video): 1 packets read (857 bytes); 1 frames decoded; 
+  Total: 1 packets (857 bytes) demuxed
+Output file #0 (C:/Users/Dr.Seuss/Documents/School/Cmpt 276/local/animations/Renders/Enemy/Wood/Small/Animated/Tree Enemy Small.gif):
+  Output stream #0:0 (video): 18 frames encoded; 18 packets muxed (39805 bytes); 
+  Total: 18 packets (39805 bytes) muxed
+19 frames successfully decoded, 0 decoding errors
+[AVIOContext @ 0000000000398a20] Statistics: 0 seeks, 19 writeouts
+[AVIOContext @ 0000000000398900] Statistics: 857 bytes read, 0 seeks

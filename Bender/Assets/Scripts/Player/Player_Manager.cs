@@ -25,7 +25,7 @@ public class Player_Manager : MonoBehaviour {
     public float maxFallDistance = -20;
     public Game_Manager gameManager;
 
-    public MeshRenderer mR;
+    public SpriteRenderer sR;
     private Player_Mouse_Rotate pMR;
     private Player_Shoot pS;
     private Player_Move pM;
@@ -34,10 +34,18 @@ public class Player_Manager : MonoBehaviour {
     private Vector3 startScale;
     private Quaternion startRot;
 
+    public List<RuntimeAnimatorController> animControllers = new List<RuntimeAnimatorController>();
+    public List<Sprite> sprites = new List<Sprite>();
+    public List<float> spriteScales = new List<float>();
+    public List<float> colliderScales = new List<float>();
+    public SpriteRenderer spriteRenderer;
+    public Animator anim;
+
+    public float minX, maxX, minZ, maxZ;
     // Use this for initialization
     void Start ()
     {
-        mR = GetComponent<MeshRenderer>();
+        sR = GetComponent<SpriteRenderer>();
         pMR = GetComponent<Player_Mouse_Rotate>();
         pS = GetComponent<Player_Shoot>();
         pM = GetComponent<Player_Move>();
@@ -45,6 +53,8 @@ public class Player_Manager : MonoBehaviour {
         startPos = transform.position;
         startScale = transform.localScale;
         startRot = transform.rotation;
+        SwitchPlayerType(0);
+       // GetComponent<SpriteRenderer>().Sp
     }
     
     // Update is called once per frame
@@ -53,8 +63,10 @@ public class Player_Manager : MonoBehaviour {
         // if (Input.GetKey("space"))
         //     TakeDamage();
 
-        if (transform.position.y < 0.9f && outOfBounds == false)
+        if (transform.position.x < minX || transform.position.x > maxX
+            || transform.position.z < minZ || transform.position.z > maxZ)
         {
+            GetComponent<Rigidbody>().useGravity = true;
             OutOfBounds();
             outOfBounds = true;
         }
@@ -91,12 +103,13 @@ public class Player_Manager : MonoBehaviour {
         {
             currentTime = Time.time;
             currentlyActive = !currentlyActive;
-            mR.enabled = currentlyActive;
+            sR.enabled = currentlyActive;
             yield return new WaitForSeconds(flashLength);
             totalTime += flashLength; 
         }
 
-        mR.enabled = true;
+        
+        sR.enabled = true;
         invincible = false;
     }
 
@@ -131,8 +144,9 @@ public class Player_Manager : MonoBehaviour {
         float delta = 0;
         float lastTime = Time.realtimeSinceStartup;
 
-        Vector3 currentRotation;
+        float currentRotation = 0;
         Vector3 currentScale;
+        float startScale = transform.localScale.x;
 
         Debug.Log("While loop starting");
         while (transform.position.y > maxFallDistance)
@@ -143,14 +157,14 @@ public class Player_Manager : MonoBehaviour {
             time += delta / fallDuration;
 
             currentScale = transform.localScale;
-            scaleFactor = Mathf.Lerp(1.0f, 0.0f, time);
+            scaleFactor = Mathf.Lerp(startScale, 0.0f, time);
             currentScale *= scaleFactor;
-            transform.localScale = currentScale;
+            transform.localScale = Vector3.one * scaleFactor;
 
-            currentRotation = transform.rotation.eulerAngles;
+            currentRotation += rotationSpeed * Time.deltaTime * 100f;
             //Debug.Log(currentRotation.y);
-            currentRotation.y += (rotationSpeed % 360) * Time.deltaTime * 100f;
-            transform.rotation = Quaternion.Euler(currentRotation);
+            //currentRotation.y += ;
+            transform.rotation = Quaternion.Euler(new Vector3(90, (currentRotation % 360) , 0));
 
             yield return null;
         }
@@ -173,4 +187,19 @@ public class Player_Manager : MonoBehaviour {
         transform.rotation = startRot;
         lives = 3;
     }
+
+    public void SwitchPlayerType(int type)
+    {
+        spriteRenderer.sprite = sprites[type];
+        anim.runtimeAnimatorController = animControllers[type];
+        transform.localScale = Vector3.one * spriteScales[type];
+        GetComponent<BoxCollider>().size = Vector3.one * colliderScales[type];
+    }
 }
+
+
+// 1.25
+// 2.5
+// 1.75
+// 1.75
+// 1.75

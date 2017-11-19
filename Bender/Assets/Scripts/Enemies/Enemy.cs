@@ -51,7 +51,6 @@ public class Enemy : MonoBehaviour {
 
     public void ChasePlayer()
     {
-        transform.LookAt(player.transform);
         Vector3 directionVector = player.transform.position - transform.position;
         transform.position += directionVector.normalized * speed * Time.deltaTime;
     }
@@ -82,7 +81,8 @@ public class Enemy : MonoBehaviour {
 
     public virtual void BulletHit(int type)
     {
-    	mR.material = hitMat;
+        if (mR != null)
+    	   mR.material = hitMat;
     	Invoke("ResetMat", 	hitDuration);
 
     	int upperRange, lowerRange;
@@ -106,6 +106,7 @@ public class Enemy : MonoBehaviour {
 
     public void ResetMat()
     {
-    	mR.material = normalMat;
+        if (mR != null)
+    	   mR.material = normalMat;
     }
 }

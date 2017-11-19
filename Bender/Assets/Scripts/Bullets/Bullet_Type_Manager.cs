@@ -15,6 +15,7 @@ public class Bullet_Type_Manager : MonoBehaviour {
 
 	public int currentBulletType;
 	public GameObject[] outlines;
+	public Player_Manager playerManager;
 
 	// Use this for initialization
 	void Start () {
@@ -86,6 +87,7 @@ public class Bullet_Type_Manager : MonoBehaviour {
 			else
 			{
 				outlines[i].SetActive(true);
+				playerManager.SwitchPlayerType(i);
 			}
 		}
 	}
