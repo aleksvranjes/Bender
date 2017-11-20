@@ -52,7 +52,7 @@ public class Spawner : MonoBehaviour {
 			for (int i = 0; i < numSmalls; i++)
 			{
 				int randomEnemy = Random.Range (0, 5);
-				randomEnemy = 1;
+				//randomEnemy = 1;
 				GameObject newEnemy = Instantiate (smallEnemies[randomEnemy], smallSpawnLocations[i].position, Quaternion.Euler(90, 0, 0), enemySmallParent);
 				newEnemy.GetComponent<Enemy>().player = player;
                 newEnemy.GetComponent<Enemy>().scoreManager = scoreManager;
