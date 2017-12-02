@@ -18,9 +18,14 @@ public class Player_Shoot : MonoBehaviour {
 
 	public Bullet_Type_Manager bTM;
 
+	public Stat_Manager statManager;
+
+	//public Texture2D currentTexture;
+
 	// Use this for initialization
 	void Start () {
 		pMR = GetComponent<Player_Mouse_Rotate>();
+		//Cursor.SetCursor(currentTexture, Vector2.zero, CursorMode.ForceSoftware);
 	}
 	
 	// Update is called once per frame
@@ -59,6 +64,7 @@ public class Player_Shoot : MonoBehaviour {
 
 			int bulletType = bTM.GetCurrentBulletType();
 			GameObject bullet = Instantiate(bulletPrefabs[bulletType], pos, angle);
+			statManager.shotsFired++;
 			//bullet.GetComponent<Bullet>().bulletType = bulletType;
 			Destroy(bullet, bulletLifespan);
 
@@ -72,4 +78,16 @@ public class Player_Shoot : MonoBehaviour {
 		allowShooting = false;
 		StopCoroutine("Shoot");
 	}
+
+//	public void ChangeCursor(Texture2D tex) {
+//		Cursor.SetCursor(tex, Vector2.zero, CursorMode.ForceSoftware);
+//	}
+
+//	public void OnMouseEnter() {
+//		Cursor.SetCursor(currentTexture, Vector2.zero, CursorMode.ForceSoftware);
+//	}
+
+//	public void OnMouseExit() {
+//		Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
+//	}
 }

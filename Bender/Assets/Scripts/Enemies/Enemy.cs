@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour {
     public Material normalMat, hitMat;
 
     public Score_Manager scoreManager;
+	public Stat_Manager statManager;
 
     private SphereCollider sC;
 
@@ -97,9 +98,11 @@ public class Enemy : MonoBehaviour {
     		lowerRange = 15;
     	}
     	hp -= Random.Range(lowerRange, 	upperRange);
+		statManager.shotsHit++;
     	if (hp <= 0)
     	{
             scoreManager.AddScore(150);
+			statManager.kills++;
     		Destroy(this.gameObject);
     	}
     }

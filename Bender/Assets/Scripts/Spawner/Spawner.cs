@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour {
 	public Transform[] smallSpawnLocations;
 
     public Score_Manager scoreManager;
+	public Stat_Manager statManager;
 
     public void Start()
     {
@@ -56,6 +57,7 @@ public class Spawner : MonoBehaviour {
 				GameObject newEnemy = Instantiate (smallEnemies[randomEnemy], smallSpawnLocations[i].position, Quaternion.Euler(90, 0, 0), enemySmallParent);
 				newEnemy.GetComponent<Enemy>().player = player;
                 newEnemy.GetComponent<Enemy>().scoreManager = scoreManager;
+				newEnemy.GetComponent<Enemy>().statManager = statManager;
             }
 			yield return new WaitForSeconds (delay);
 		}

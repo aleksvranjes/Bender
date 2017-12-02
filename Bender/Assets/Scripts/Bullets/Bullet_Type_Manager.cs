@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bullet_Type_Manager : MonoBehaviour {
 
+	//public List<Texture2D> texList = new List<Texture2D>();
+	//public Player_Shoot pS;
+
 	enum BulletType 
 	{
 		Wood = 0,
@@ -38,26 +41,31 @@ public class Bullet_Type_Manager : MonoBehaviour {
 		{
 			currentBulletType = 0;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[0]);
 		}
 		else if (Input.GetKeyDown("2"))
 		{
 			currentBulletType = 1;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[1]);
 		}
 		else if (Input.GetKeyDown("3"))
 		{
 			currentBulletType = 2;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[1]);
 		}
 		else if (Input.GetKeyDown("4"))
 		{
 			currentBulletType = 3;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[3]);
 		}
 		else if (Input.GetKeyDown("5"))
 		{
 			currentBulletType = 4;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[4]);
 		}
 
 		// Mouse wheel element traversal
@@ -65,6 +73,7 @@ public class Bullet_Type_Manager : MonoBehaviour {
 		{
 			currentBulletType = (currentBulletType + 1) % 5;
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[currentBulletType]);
 		}
 		else if (Input.GetAxis("Mouse ScrollWheel") < 0)
 		{
@@ -73,6 +82,7 @@ public class Bullet_Type_Manager : MonoBehaviour {
 				currentBulletType = 4;
 				
 			TurnOnOutline();
+			//pS.ChangeCursor(texList[currentBulletType]);
 		}
 	}
 
@@ -95,5 +105,11 @@ public class Bullet_Type_Manager : MonoBehaviour {
 	public int GetCurrentBulletType()
 	{
 		return currentBulletType;
+	}
+
+	public void Reset() {
+		currentBulletType = 0;
+		TurnOnOutline();
+		//pS.ChangeCursor(texList[0]);
 	}
 }

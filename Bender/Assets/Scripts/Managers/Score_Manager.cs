@@ -8,6 +8,8 @@ public class Score_Manager : MonoBehaviour {
     public int score = 0;
     public Text scoreText;
 
+	public Stat_Manager statManager;
+
 	// Use this for initialization
 	void Start () {
         scoreText.gameObject.SetActive(true);
@@ -29,5 +31,7 @@ public class Score_Manager : MonoBehaviour {
     {
         score += points;
         scoreText.text = "Score: " + score;
+
+		statManager.score += points;
     }
 }

@@ -31,7 +31,7 @@ public class Player_Manager : MonoBehaviour {
     private Player_Move pM;
 
     private Vector3 startPos;
-    private Vector3 startScale;
+    public Vector3 startScale;
     private Quaternion startRot;
 
     public List<RuntimeAnimatorController> animControllers = new List<RuntimeAnimatorController>();
@@ -51,7 +51,7 @@ public class Player_Manager : MonoBehaviour {
         pM = GetComponent<Player_Move>();
         DisablePlayer();
         startPos = transform.position;
-        startScale = transform.localScale;
+		startScale = new Vector3(1.0f, 1.0f, 1.0f);
         startRot = transform.rotation;
         SwitchPlayerType(0);
        // GetComponent<SpriteRenderer>().Sp

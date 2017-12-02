@@ -16,6 +16,9 @@ public class Game_Manager : MonoBehaviour {
     public Text livesText;
     public Transform smallEnemies;
 
+	public Stat_Manager statManager;
+	public Bullet_Type_Manager bulletTypeManager;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -46,10 +49,13 @@ public class Game_Manager : MonoBehaviour {
         spawner.StartAllSpawners();
         playerManager.EnablePlayer();
         screenOverlayText.gameObject.SetActive(false);
+
+		statManager.StartGame();
     }
 
     public void ResetGame()
     {
+		bulletTypeManager.Reset();
         TurnOnText("Press 'Space' To Start!");
         readyToStart = true;
         scoreManager.ResetScore();
@@ -57,6 +63,7 @@ public class Game_Manager : MonoBehaviour {
         livesText.text = "Lives: 3";
         ResetEnemies();
 
+		statManager.ResetGame();
     }
 
     public void GameOver()
@@ -66,6 +73,8 @@ public class Game_Manager : MonoBehaviour {
         playerManager.DisablePlayer();
         TurnOnText("Game Over!!\nPress 'R' To Restart Game");
         gameOver = true;
+
+		statManager.GameOver();
 
     }
 
