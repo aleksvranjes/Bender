@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour {
 		Metal = 4
 	};
 
+    public bool isBig = false;
 	public EnemyType enemyType;
     public GameObject player;
     public float speed = 5f;
@@ -26,11 +27,16 @@ public class Enemy : MonoBehaviour {
 
     public Score_Manager scoreManager;
 	public Stat_Manager statManager;
+    public float randomWait = 3f;
+    public bool shootPlayerStarted = false;
 
     private SphereCollider sC;
 
     private Rigidbody rb;
     private MeshRenderer mR;
+
+    public GameObject bulletPrefab;
+    public float bulletLifespan = 3f;
 
 	// Use this for initialization
 	void Start () {
@@ -38,6 +44,7 @@ public class Enemy : MonoBehaviour {
         sC = GetComponent<SphereCollider>();
         mR = GetComponent<MeshRenderer>();
         speed = speed + (Random.Range(-2.0f, 2.0f));
+        randomWait = 3f;
 
 	}
 	
@@ -48,6 +55,13 @@ public class Enemy : MonoBehaviour {
         {
             ChasePlayer();
         }
+        if (isBig && player != null && !shootPlayerStarted)
+        {
+            shootPlayerStarted = true;
+            StartCoroutine("ShootPlayer");
+        }
+        if (isBig)
+            randomWait -= Time.deltaTime;
 	}
 
     public void ChasePlayer()
@@ -63,7 +77,8 @@ public class Enemy : MonoBehaviour {
         	if (!collision.transform.GetComponent<Player_Manager>().invincible)
         	{
             	collision.transform.GetComponent<Player_Manager>().TakeDamage();
-            	Destroy(this.gameObject);
+                if (!isBig)
+                	Destroy(this.gameObject);
         	}
         	else
         	{
@@ -101,8 +116,12 @@ public class Enemy : MonoBehaviour {
 		statManager.shotsHit++;
     	if (hp <= 0)
     	{
-            scoreManager.AddScore(150);
-			statManager.kills++;
+            if (!isBig)
+                scoreManager.AddScore(150);
+			else
+                scoreManager.AddScore(350);
+                
+            statManager.kills++;
     		Destroy(this.gameObject);
     	}
     }
@@ -111,5 +130,21 @@ public class Enemy : MonoBehaviour {
     {
         if (mR != null)
     	   mR.material = normalMat;
+    }
+
+    public IEnumerator ShootPlayer()
+    {
+        while (true)
+        {
+            Vector3 from = -transform.up;
+            Vector3 to = (player.transform.position - transform.position).normalized;
+
+            float rot = Mathf.Acos(((from.x * to.x) + (from.y * to.y) + (from.z * to.z)) / (from.magnitude * to.magnitude));
+
+            GameObject bullet = Instantiate(bulletPrefab, new Vector3(transform.position.x, 1, transform.position.z), Quaternion.Euler(new Vector3(90, rot, 0)));
+            //bullet.GetComponent<Bullet>().bulletType = bulletType;
+            Destroy(bullet, bulletLifespan);
+            yield return new WaitForSeconds(Random.Range(1, 3));
+        }
     }
 }

@@ -40,6 +40,7 @@ public class Player_Manager : MonoBehaviour {
     public List<float> colliderScales = new List<float>();
     public SpriteRenderer spriteRenderer;
     public Animator anim;
+    public float bulletPower = 5;
 
     public float minX, maxX, minZ, maxZ;
     // Use this for initialization
@@ -194,6 +195,11 @@ public class Player_Manager : MonoBehaviour {
         anim.runtimeAnimatorController = animControllers[type];
         transform.localScale = Vector3.one * spriteScales[type];
         GetComponent<BoxCollider>().size = Vector3.one * colliderScales[type];
+    }
+
+    public void EnemyBulletHit(Vector3 bulletDirection)
+    {
+        GetComponent<Rigidbody>().AddForce(bulletDirection.normalized * bulletPower, ForceMode.Impulse);
     }
 }
 

@@ -14,7 +14,7 @@ public class Game_Manager : MonoBehaviour {
 
     public Text screenOverlayText;
     public Text livesText;
-    public Transform smallEnemies;
+    public Transform smallEnemies, bigEnemies;
 
 	public Stat_Manager statManager;
 	public Bullet_Type_Manager bulletTypeManager;
@@ -95,6 +95,11 @@ public class Game_Manager : MonoBehaviour {
         for (int i = 0; i < totalChildren; i++)
         {
             Destroy(smallEnemies.GetChild(i).gameObject);
+        }
+        totalChildren = bigEnemies.childCount;
+        for (int i = 0; i < totalChildren; i++)
+        {
+            Destroy(bigEnemies.GetChild(i).gameObject);
         }
     }
 }

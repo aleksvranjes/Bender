@@ -58,7 +58,7 @@ public class Player_Shoot : MonoBehaviour {
 	{
 		while (true)
 		{
-			Debug.Log(pMR.angle);
+//			Debug.Log(pMR.angle);
 			Quaternion angle = Quaternion.Euler(new Vector3(90, -pMR.angle - 90, 0.0f));
 			Vector3 pos = transform.position;
 

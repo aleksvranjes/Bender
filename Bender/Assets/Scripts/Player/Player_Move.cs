@@ -12,7 +12,7 @@ public class Player_Move : MonoBehaviour {
     private bool keyPressed;
     public bool allowMovement = true;
 
-    Vector3 speed;
+    public Vector3 speed;
 
     void Start()
     {
