@@ -51,6 +51,7 @@ public class Game_Manager : MonoBehaviour {
         screenOverlayText.gameObject.SetActive(false);
 
 		statManager.StartGame();
+        readyToStart = false;
     }
 
     public void ResetGame()

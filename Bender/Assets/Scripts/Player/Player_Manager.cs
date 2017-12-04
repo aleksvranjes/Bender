@@ -126,11 +126,12 @@ public class Player_Manager : MonoBehaviour {
         pMR.rotateWithMouse = true;
         pS.allowShooting = true;
         pM.allowMovement = true;
+        sR.enabled = true;
     }
 
     public void OutOfBounds()
     {
-        Debug.Log("Out of bounds");
+//        Debug.Log("Out of bounds");
         pMR.rotateWithMouse = false;
         pS.StopShooting();
         pM.allowMovement = false;
@@ -149,8 +150,8 @@ public class Player_Manager : MonoBehaviour {
         Vector3 currentScale;
         float startScale = transform.localScale.x;
 
-        Debug.Log("While loop starting");
-        while (transform.position.y > maxFallDistance)
+//        Debug.Log("While loop starting");
+        while (scaleFactor > 0.001f)
         {
             currentTime = Time.realtimeSinceStartup;
             delta = currentTime - lastTime;
@@ -186,6 +187,7 @@ public class Player_Manager : MonoBehaviour {
         transform.position = startPos;
         transform.localScale = startScale;
         transform.rotation = startRot;
+        sR.enabled = true;
         lives = 3;
     }
 
