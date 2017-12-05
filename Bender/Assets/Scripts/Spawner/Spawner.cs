@@ -93,7 +93,7 @@ public class Spawner : MonoBehaviour {
 			//numBigs = 1;
 			for (int i = 0; i < numBigs; i++)
 			{
-				int randomEnemy = Random.Range (0, 4);
+				int randomEnemy = Random.Range (0, 5);
 				//randomEnemy = 0;
 				GameObject newEnemy = Instantiate (bigEnemies[randomEnemy], bigSpawnLocations[i].position, Quaternion.Euler(90, 0, 0), enemyBigParent);
 				newEnemy.GetComponent<Enemy>().player = player;
